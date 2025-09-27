@@ -117,3 +117,10 @@ function updateBehavior(learningPatterns) {
 
 bot.on('error', err => console.log(err));
 
+bot.on("end", () => {
+  console.log("Conexion perdida. Reintentando en 30...")
+  setTimeout(() =>  {
+    process.exit(1)
+  }, 30000);
+})
+
