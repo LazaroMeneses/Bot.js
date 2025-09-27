@@ -1,5 +1,5 @@
 const HOST = process.env.HOT || "CAMG80.aternos.me";
-const PORT = parseInt(process.env.PORT, 10) || 25565;
+const PORT = parseInt(process.env.PORT, 10) || 54139;
 const USERNAME = process.env.USERNAME || "LightBot"
 
 const mineflayer = require('mineflayer');
@@ -123,4 +123,5 @@ bot.on("end", () => {
     process.exit(1)
   }, 30000);
 })
+
 
