@@ -1,10 +1,15 @@
+const HOST = process.env.HOT || "CAMG80.aternos.me";
+const PORT = parseInt(process.env.PORT, 10) || 25565;
+const USERNAME = process.env.USERNAME || "LightBot"
+
 const mineflayer = require('mineflayer');
+
 
 // Crea el bot con la información del servidor
 const bot = mineflayer.createBot({
-  host: 'CAMG80.aternos.me', // IP o dominio de tu servidor
-  port: 25565, // Puerto del servidor (por defecto es 25565)
-  username: 'Admin' // Nombre del bot
+  host: HOST, // IP o dominio de tu servidor
+  port: PORT, // Puerto del servidor (por defecto es 25565)
+  username: USERNAME // Nombre del bot
 });
 
 // Función para que el bot explore el mundo
@@ -111,3 +116,4 @@ function updateBehavior(learningPatterns) {
 // Manejo de errores
 
 bot.on('error', err => console.log(err));
+
