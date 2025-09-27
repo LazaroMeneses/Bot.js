@@ -2,7 +2,7 @@ const mineflayer = require('mineflayer');
 
 // Crea el bot con la información del servidor
 const bot = mineflayer.createBot({
-  host: 'Survival-oPu3.aternos.me', // IP o dominio de tu servidor
+  host: 'CAMG80.aternos.me', // IP o dominio de tu servidor
   port: 25565, // Puerto del servidor (por defecto es 25565)
   username: 'Admin' // Nombre del bot
 });
@@ -109,4 +109,5 @@ function updateBehavior(learningPatterns) {
 }
 
 // Manejo de errores
+
 bot.on('error', err => console.log(err));
